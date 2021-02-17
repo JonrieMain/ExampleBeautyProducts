@@ -1,0 +1,24 @@
+/* footer sec. layout */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background: rgb(248, 218, 234);
+}
+.footer p{
+    color: #000;
+    font-size: 1.9vw;
+}
+/* media for footer */
+@media(min-width: 569px) and (max-width: 679px){
+    .footer p{
+        font-size: 3vw;
+    }
+}
+@media only screen and (max-width: 568px){
+    .footer p{
+        font-size: 4vw;
+    }
+}

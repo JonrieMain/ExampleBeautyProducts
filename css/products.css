@@ -1,0 +1,89 @@
+ /* products sec. layout and style */
+ .products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3.5rem repeat(2, 1fr);
+    grid-template-areas: "title title title"
+    "p1 p2 p3"
+    "p4 p5 p6";
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+/* grid area */
+ .products .product-title{
+    grid-area: title;
+    text-align: center;
+   background: rgb(248, 218, 234);
+}
+ .products .p1{
+    grid-area: p1;
+    position: relative;
+}
+ .products .p2{
+    grid-area: p2;
+    position: relative;
+}
+ .products .p3{
+    grid-area: p3;
+    position: relative;
+}
+ .products .p4{
+    grid-area: p4;
+    position: relative;
+}
+ .products .p5{
+    grid-area: p5;
+    position: relative;
+}
+ .products .p6{
+    grid-area: p6;
+   position: relative;
+}
+/* images style */
+ .products div a img{
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+    max-height: 400px;
+    cursor: pointer;
+    transition: .6s;
+    border: 1.4px solid rgb(248, 218, 234); 
+    padding: .4rem;
+    border-radius: 1rem;
+}
+/* images hover(zoom effect) */
+.products div img:hover{
+    transform: scale(1.1);
+    border: none;
+}
+/* media for products sec. */
+@media(min-width: 569px) and (max-width: 679px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 3.5rem repeat(3, 1fr);
+        grid-template-areas: "title title"
+        "p1 p2"
+        "p3 p4"
+        "p5 p6";
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width: 568px){
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3.5rem repeat(6, 1fr);
+        grid-template-areas: "title"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6";
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

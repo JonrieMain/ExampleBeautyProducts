@@ -1,0 +1,24 @@
+/* line */
+.line{
+    height: 5rem;
+    width: 100%;
+    background: rgb(248, 218, 234);
+}
+/* contact sec. style */
+.contact{
+padding: 2rem 0;
+width: 45%;
+margin: 0 auto;
+height: 100%;
+background: rgb(248, 218, 234);
+}
+.contact .container h1{
+    text-align: center;
+}
+.contact .container textarea{
+    width: 100%;
+}
+.contact .container button{
+    transition: .4s;
+}
+

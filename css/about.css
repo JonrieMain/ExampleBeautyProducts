@@ -1,0 +1,51 @@
+/* about sec style */
+.about{
+    padding: 1rem;
+}
+.about h1{
+    text-align: center;
+}
+.about p{
+    max-width: 95%;
+    margin: 0 auto;
+    transition: .6s ease;
+    padding: 4px;
+    border-radius: .5rem;
+}
+/* about p hover */
+.about p:hover{
+    background:  rgb(248, 218, 234,.7);
+}
+/* second-about class style and layout */
+.second-about{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+.second-about div h1{
+    text-align: center;
+}
+.second-about div{
+    padding: 5px;
+}
+.second-about div p{
+    transition: .6s ease;
+    padding: 4px;
+    border-radius: .5rem;
+}
+/* second-about p hover */
+.second-about div p:hover{
+    background: rgb(248, 218, 234,.7);
+}
+/* media for second-about */
+@media(min-width: 569px) and (max-width: 679px){
+    .second-about{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 568px){
+    .second-about{
+        flex-direction: column;
+    }
+}
