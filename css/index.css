@@ -166,7 +166,8 @@ body{
 	color: #000;
 }
 .home-main .others-btn i:hover{
-	transform: translateY(-15%)
+	transform: translateY(-15%);
+	color: rgba(245, 66, 161);
 }
 
 /* media for home sec. */
